@@ -39,7 +39,7 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/about">About</a>
-    <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/all//">All Demos</a>
+    <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/all/">All Demos</a>
     {% for cat in site.categories %}
       <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/{{ cat[0] | slugify }}/"> {{ cat[0] | escape }} </a>
     {% endfor %}
