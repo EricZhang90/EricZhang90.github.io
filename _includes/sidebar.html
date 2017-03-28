@@ -40,7 +40,7 @@
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/about">About</a>
     {% for cat in site.categories %}
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/{{ cat[0] | slugify }}/"> {{ cat[0] | slugify }} </a>
+      <a class="sidebar-nav-item" href="{{ site.baseurl }}/categories/{{ cat[0] | slugify }}/"> {{ cat[0] | escape }} </a>
     {% endfor %}
     <a class="sidebar-nav-item" href="{{ site.baseurl }}/blog/tags/">Tags</a>
     <a class="sidebar-nav-item" href="https://github.com/EricZhang90">GitHub projects</a>
