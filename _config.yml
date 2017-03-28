@@ -13,6 +13,7 @@ paginate:            5
 
 # About/contact
 author:
+  gravatar:          https://avatars1.githubusercontent.com/u/11701625?v=3&amp;s=400
   name:              Eric Zhang
   url:               https://github.com/EricZhang90
   email:             lzhang.eric@gmail.com
