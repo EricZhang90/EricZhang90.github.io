@@ -6,8 +6,7 @@ title: iOS
 <div class="tags-expo">
   <div class="tags-expo-section">
     <ul class="tags-expo-posts">
-       {% assign ios = site.categories.iOS %}
-       {% for post in ios[1] %}
+       {% for post in site.categories.iOS[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
       <li>
         {{ post.title }}
