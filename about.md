@@ -7,7 +7,7 @@ title: About
   Like programming, like lobster, like sushi. Note: 'sushi' in Japanaese is pronounced as 'si xi'. 
 </p>
 
-Usually doing full stack: back-end(Python-flask) + front-end (mobile/web).  I like programming, it gives me a great sense of accomplishment.
+Usually doing full stack: back-end(Python-flask) + front-end (iOS/web).  I like programming, it gives me a great sense of accomplishment.
 
 
 Learn more and contribute on [My GitHub](https://github.com/EricZhang90).
