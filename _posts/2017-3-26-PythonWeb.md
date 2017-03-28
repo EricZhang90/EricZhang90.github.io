@@ -1,6 +1,8 @@
 ---
 layout: post
 title: PythonWeb - A Web Server
+category: iOS
+tags: [iOS, Swift]
 ---
 
 A web service that includes back-end (Flask), front-end (Jinja2 + Angular 1.5). The web service provides a social community letting the uses share their life.
