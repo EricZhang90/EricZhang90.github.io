@@ -4,5 +4,17 @@ title: iOS
 ---
 
 <div class="tags-expo">
-  
+  <div class="tags-expo-section">
+    <ul class="tags-expo-posts">
+       {% assign ios = site.categories.iOS %}
+       {% for post in ios[1] %}
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+      <li>
+        {{ post.title }}
+      <small class="post-date">{{ post.date | date_to_string }}</small>
+      </li>
+      </a>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
