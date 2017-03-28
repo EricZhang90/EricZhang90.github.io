@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PythonWeb - A Web Server
-category: iOS
+category: Python
 tags: [Python, Flask]
 ---
 
