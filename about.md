@@ -10,8 +10,13 @@ title: About
 Usually doing full stack: back-end(Python-flask) + front-end (mobile/web).  I like programming, it gives me a great sense of accomplishment.
 
 
-Learn more and contribute on [GitHub](https://github.com/EricZhang90).
+Learn more and contribute on [My GitHub](https://github.com/EricZhang90).
 
+
+
+  ***
+  
+  
 
 Have questions or suggestions? Feel free to mail me [lzhang.eric@gmail.com](mailto:email@domain.com)!
 
