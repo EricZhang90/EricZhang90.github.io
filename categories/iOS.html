@@ -1,0 +1,19 @@
+---
+layout: page
+title: iOS
+---
+
+<div class="tags-expo">
+  <div class="tags-expo-section">
+    {% for post in site.categories.iOS[1] %}
+    <ul class="tags-expo-posts">
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+      <li>
+        {{ post.title }}
+      <small class="post-date">{{ post.date | date_to_string }}</small>
+      </li>
+      </a>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
