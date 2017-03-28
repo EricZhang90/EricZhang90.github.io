@@ -4,7 +4,7 @@ title: About
 ---
 
 <p class="message">
-  Like lobster, like sushi. Note: 'sushi' in Japanaese is pronounced as 'si xi'. 
+  Like programming, like lobster, like sushi. Note: 'sushi' in Japanaese is pronounced as 'si xi'. 
 </p>
 
 Usually doing full stack: back-end(Python-flask) + front-end (iOS/web).  I like programming, it gives me a great sense of accomplishment.
