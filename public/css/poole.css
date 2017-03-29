@@ -35,6 +35,10 @@
  * Update the foundational and global aspects of the page.
  */
 
+.mainTitle {
+  margin-top: -2rem;  
+}
+
 .hero {
   text-align: center;
   font-size: 0.75rem;
