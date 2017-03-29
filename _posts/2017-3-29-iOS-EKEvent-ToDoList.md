@@ -13,9 +13,9 @@ A app that collects tasks in one place and organizes them according to user pers
   
   *__Techniques/Frameworks used:__*
 
-1. EKEvent Kit
+1. `EKEvent Kit`
 
-2. Core Data
+2. `Core Data`
 
 3. `NotificaionCenter`
 
