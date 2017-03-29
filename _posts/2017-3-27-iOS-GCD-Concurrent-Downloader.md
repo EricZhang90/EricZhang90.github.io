@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS - GCD - Async/Sync Concurrency
+title: iOS - GCD - Async/Sync Concurrenct Downloader
 category: iOS
 tags: [iOS, Swift]
 ---
