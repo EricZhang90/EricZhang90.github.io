@@ -2,7 +2,7 @@
 layout: post
 title: iOS - GCD - Concurrent Downloader
 category: iOS
-tags: [iOS, Swift]
+tags: [iOS, Swift, GCD, URLSession]
 ---
 
   A demo that includes a thread-safe singleton object used to concurrently download multiple images from [Unsplash Source](https://source.unsplash.com/)
