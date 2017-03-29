@@ -36,7 +36,8 @@
  */
 
 .homeTitle {
-  left: 30px; 
+  margin-left: 5rem;
+  font-size: 1rem;
 }
 
 .hero {
