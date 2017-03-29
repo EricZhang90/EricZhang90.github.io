@@ -35,6 +35,17 @@
  * Update the foundational and global aspects of the page.
  */
 
+.hero {
+  text-align: center;
+  font-size: 0.75rem;
+  img {
+    height: 28rem;
+    width: auto;
+    display: inline;
+    margin-top: -1rem;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
