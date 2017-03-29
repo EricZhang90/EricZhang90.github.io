@@ -8,7 +8,6 @@ title:               Greeting! I like Reb Lobster! lol
 tagline:             "Eric Zhang"
 description:         "Eric Zhang's Github"
 url:                 https://Ericzhang90.github.io
-baseurl:             'https://ericzhang90.github.io'
 paginate:            5
 
 # About/contact
