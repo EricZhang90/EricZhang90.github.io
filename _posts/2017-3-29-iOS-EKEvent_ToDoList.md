@@ -1,0 +1,24 @@
+---
+layout: post
+title: iOS - GCD - Async/Sync Concurrency
+category: iOS
+tags: [iOS, Objective-c]
+---
+
+A app that collects tasks in one place and organizes them according to user personal priorities by Core Data. One of features of this app is letting the user add ToDo items to calander and remainder.
+
+
+ ***
+  
+  
+  *__Techniques/Frameworks used:__*
+
+1. EKEvent Kit
+
+2. Core Data
+
+3. `NotificaionCenter`
+
+4. `UITableViewController`
+
+5. cloud in future?
