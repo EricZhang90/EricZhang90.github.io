@@ -17,7 +17,7 @@ A app that collects tasks in one place and organizes them according to user pers
 
 2. `Core Data`
 
-3. `NotificaionCenter`
+3. `NSNotificaionCenter`
 
 4. `UITableViewController`
 
