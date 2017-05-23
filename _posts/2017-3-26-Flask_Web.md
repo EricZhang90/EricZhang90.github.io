@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PythonWeb - A Web Server
+title: Flask_Web - A Web Server
 category: Python
 tags: [Python, Flask]
 ---
