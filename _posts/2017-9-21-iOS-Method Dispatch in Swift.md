@@ -7,7 +7,7 @@ tags: [iOS, Swift]
 
 # Method Dispatch in Swift (note)
 
-Original blog: https://www.raizlabs.com/dev/2016/12/swift-method-dispatch/  
+Learned from blog: https://www.raizlabs.com/dev/2016/12/swift-method-dispatch/  
 
 ## In gerenal:
 Q: What is method dispatch in computer science?  
@@ -15,7 +15,7 @@ A: A instruction that tells the CPU where in memory to find the executable code 
 <br/>
 <br/>
 <br/>
-## Three primary method dispatch mechanisms in complied programming language:  
+Three primary method dispatch mechanisms in complied programming language:  
 ###  Direct dispatch(static)
   * Such as C++ by default
   * Advantage: Fastest
@@ -56,5 +56,22 @@ A: A instruction that tells the CPU where in memory to find the executable code 
 
 ### Message dispatch(dynamitic)
   * Such as Objective-C
+  * Crawls class hierarchy in runtime to determine which method to invoke. Can changes method's behaviour and class's concept in runtime.
+  * Example:
+```Swift    
+  class ParentClass {  
+      dynamic method1() {
+      dynamic method2() {}
+  }
+  class ChildClass: ParentClass {
+      override func method2() {}
+      dynamic method3() {}
+  } 
+``` 
+<img src="https://www.raizlabs.com/dev/wp-content/uploads/sites/10/2016/12/message-dispatch.png" hspace="10" vspace="6">
+<br/>
 
+    Note: lookup is guarded by a fast cache layer that makes lookups almost as fast as table dispatch once the cache is warmed up.
+    
+    
 
