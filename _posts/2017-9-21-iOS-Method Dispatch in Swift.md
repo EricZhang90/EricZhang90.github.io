@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS - Method Dispatch in Swift
+title: iOS - Method-Dispatch-in-Swift
 category: iOS
 tags: [iOS, Swift]
 ---
