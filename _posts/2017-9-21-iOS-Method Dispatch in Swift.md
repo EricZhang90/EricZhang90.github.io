@@ -5,6 +5,7 @@ category: iOS
 tags: [iOS, Swift]
 ---
 
+
 # Method Dispatch in Swift (note)
 
 ##### Learned from blog: https://www.raizlabs.com/dev/2016/12/swift-method-dispatch/  
@@ -116,7 +117,7 @@ Three primary method dispatch mechanisms in complied programming language:
     myPro.extensionMethod() // -> “Extension In Protocol”
   ```
   
-  ###### Why calling `myPro.extensionMethod()` results in the output `“Extension In Protocol”`? Because, firstly, according to the location table above, this calling uses direct dispath(in onther word, there is not 'override' behaviour), second, type of `myPro` is `MyProtocal`, only methods is visible to the protocal is used to use to direct dispatch.
+  ###### Why calling `myPro.extensionMethod()` results in the output `“Extension In Protocol”`? Because, firstly, according to the location table above, this calling uses direct dispath(in other word, there is not 'override' behaviour), second, type of `myPro` is `MyProtocal`, only methods is visible to the protocal is used to direct dispatch.
   
   Let's see another example:
   ```Swift
@@ -145,6 +146,7 @@ Three primary method dispatch mechanisms in complied programming language:
   proto.mainMethod() // -> "main method in Structure" 
 
   ```
-  ###### Why calling `proto.mainMethod()` results in same output `"main method in Structure"`? Because, according to location table above, this calling uses table dispatch, therefore, 'override' occured, the method `mainMethod()` in `MyProtocal` is overrided by the one in `MyStruct`.
+  ###### Why calling `proto.mainMethod()` results in output `"main method in Structure"`? Because, according to location table above, this calling uses table dispatch, therefore, 'override' occured, the method `mainMethod()` in `MyProtocal` is overrided by the one in `MyStruct`.
+
 
 
