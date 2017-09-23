@@ -123,7 +123,7 @@ Three primary method dispatch mechanisms in complied programming language:
   ```Swift
   protocol MyProtocol {
   
-    func mainMethod(){}
+    func mainMethod()
   }
   
   extension MyProtocol {
