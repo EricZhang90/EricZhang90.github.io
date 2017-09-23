@@ -7,7 +7,7 @@ tags: [iOS, Swift]
 
 # Method Dispatch in Swift (note)
 
-Learned from blog: https://www.raizlabs.com/dev/2016/12/swift-method-dispatch/  
+##### Learned from blog: https://www.raizlabs.com/dev/2016/12/swift-method-dispatch/  
 
 ## In gerenal:
 Q: What is method dispatch in computer science?  
@@ -25,13 +25,13 @@ Three primary method dispatch mechanisms in complied programming language:
   * The class has an array (function table) of function pointers for each method. The subclass has own copy of function table. There are the rules for creating the subclass’s function table:
     1. If the method is extended from super class, simply copy the address of the method to the subclass’s function table.
     2. If the method is overrided, add the new method’s address to the subclass’s function table.
-    3. If the method is newly created in subclass, append the method’s address to the end of in the function table.
+    3. If the method is created in subclass, append the method’s address to the end of in the function table.
 
     Example:  
     
 ```Swift    
   class ParentClass {  
-      func method1() {
+      func method1() {}
       func method2() {}
   }
   class ChildClass: ParentClass {
@@ -74,4 +74,18 @@ Three primary method dispatch mechanisms in complied programming language:
   * Note: lookup is guarded by a fast cache layer that makes lookups almost as fast as table dispatch once the cache is warmed up.
     
     
+
+## Method Dispatch in Swift
+#### Four aspects that guide how dispatch is selected in Swift: Declaration Location, Reference Type, Specified Behavior and Visibility Optimizations
+
+* Location: 
+
+|                  | Declared in Class| Declared in Extension |
+| ---------------  |:----------------:| :--------------------:|
+| Property         | Direct Dispatch  | Direct dispatch       |
+| Protocal         | Table Dispatch   | Direct dispatch       |
+| Class            | Table Dispatc    | Direct dispatch       |
+| NSObject subclass| Table Dispatc    | Table Dispatc         |
+
+
 
