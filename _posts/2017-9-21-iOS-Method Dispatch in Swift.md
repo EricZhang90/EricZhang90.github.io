@@ -88,4 +88,63 @@ Three primary method dispatch mechanisms in complied programming language:
 | NSObject subclass| Table Dispatc    | Table Dispatc         |
 
 
+<br/><br/>
+* Reference Type:  
+  * Type of reference also determines how to dispatch methods. 
+  * Example: 
+  ```Swift
+    protocol MyProtocol {}
+    
+    extension MyProtocol {
+      func extensionMethod() {
+        print("Extension In Protocol")
+      }
+    }
+    
+    struct MyStruct: MyProtocol {}
+    
+    extension MyStruct {
+      func extensionMethod() {
+        print("Extension In Struct")
+      }
+    }
+ 
+    let myStruct = MyStruct()
+    let myPro: MyProtocol = myStruct
+    
+    myStruct.extensionMethod() // -> “Extension In Struct”
+    myPro.extensionMethod() // -> “Extension In Protocol”
+  ```
+  
+  ###### Why calling `myPro.extensionMethod()` results in the output `“Extension In Protocol”`? Because, firstly, according to the location table above, this calling uses direct dispath(in onther word, there is not 'override' behaviour), second, type of `myPro` is `MyProtocal`, only methods is visible to the protocal is used to use to direct dispatch.
+  
+  Let's see another example:
+  ```Swift
+  protocol MyProtocol {
+  
+    func mainMethod(){}
+  }
+  
+  extension MyProtocol {
+  
+    func mainMethod() {
+      print("main method in Protocal")
+    }
+  }
+  
+  struct MyStruct: MyProtocol {
+    func mainMethod() {
+      print("main method in Structure")
+    }
+  }
+  
+  let myStruct = MyStruct()
+  let myPro: MyProtocol = myStruct
+  
+  myStruct.mainMethod() // -> "main method in Structure" 
+  proto.mainMethod() // -> "main method in Structure" 
+
+  ```
+  ###### Why calling `proto.mainMethod()` results in same output `"main method in Structure"`? Because, according to location table above, this calling uses table dispatch, therefore, 'override' occured, the method `mainMethod()` in `MyProtocal` is overrided by the one in `MyStruct`.
+
 
